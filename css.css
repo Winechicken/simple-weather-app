@@ -1,0 +1,302 @@
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1422493757035-1e5e03968f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2008&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body{
+  background: linear-gradient(#25359e63, #451a7a62, #08085362, #0806347d);
+  backdrop-filter: blur(30px);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Fragment Mono', monospace;
+  color: #E3F4F4;
+  text-shadow: 0 5px 5px #181818;
+}
+.darkhtml{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://4kwallpapers.com/images/wallpapers/sunset-mountain-silhouette-crescent-moon-night-time-4480x2520-4997.jpg");
+}
+.darkbody{
+  background: linear-gradient(#1b224f63, #220e3b62);
+  backdrop-filter: blur(30px);
+  color: #a7a9a9;
+  text-shadow: 0 5px 5px #181818;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Fragment Mono', monospace;
+
+}
+
+h1{
+  position: absolute;
+  top: 7%;
+  right: 9%;
+  color: #E3F4F4;
+  text-shadow: 0 3px 5px #181818, 0 -2px 5px #cdc9c9;
+  letter-spacing: 2px;
+  font-size: 45px;
+  cursor:default;
+}
+/* body *{
+  border: 1px solid red;
+} */
+input{
+  position: relative;
+  top: 10%;
+  left: 19%;
+  padding: 15px 24px;
+  font-family: 'Fragment Mono', monospace;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: inset 0 4px 6px #191919;
+  background-color: #0d0f226e;
+  color: #c9e78d;
+}
+input:focus{
+  background-color: #2b1a476e;
+}
+#allInfo{
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#photo{
+  background-color: #0d0f226e;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 4px solid #E3F4F4;
+  box-shadow: 0 7px 10px #191919, inset 0 7px 10px #191919;
+}
+#srchBtn{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #7177b290;
+  border: none;
+  box-shadow: 0 3px 4px #191919, inset 0 2px 3px #b0b0b0;
+  position: relative;
+  top: 100px;
+  left: 305px;
+}
+#lupa{
+  width: 30px;
+}
+#pogoda{
+  font-size: 40px;
+}
+#tempo, #city{
+  font-size: 60px;
+}
+footer{
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  height: 70px;
+  box-shadow: inset 0 5px 10px #191919;
+  border-radius: 0 50px 0 0;
+  background-color: #a5a5e325;
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#themeBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  background-color: #a5a5e325;
+  border: none;
+  box-shadow: 0 0 4px #191919, inset 0 0 10px #b0b0b0;
+}
+#mainInfo, #secondInfo{
+  text-align: end;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 450px;
+  width: 450px;
+  text-shadow: 3px 3px 2px #181818;
+}
+#mainInfo *{
+  margin: 0;
+}
+#secondInfo *{
+  margin: 10px 0;
+}
+#tempo{
+  margin-top: 50px;
+}
+
+
+@media all and (max-width: 1400px){
+  #input{
+    position: relative;
+    left: 2%;
+  }
+  #photo{
+    width: 350px;
+    height: 350px;
+  }
+}
+@media all and (max-width: 1260px){
+  #allInfo{
+    flex-direction: column;
+  }
+  #mainInfo, #secondInfo{
+    width: 80%;
+    margin: -50px;
+  }
+  #photo{
+    position: relative;
+    bottom: 450px;
+    left: -300px;
+  }
+  #heading{
+    position: absolute;
+    top: 1%;
+  }
+  #input{
+    top: 12%;
+  }
+  footer{
+    width: 55%;
+  }
+}
+@media all and (max-width: 1000px){
+  footer{
+    width: 85%;
+  }
+  #city, #tempo{
+    font-size: 35px;
+  }
+  #secondInfo{
+    font-size: 20px;
+  }
+  #photo{
+    left: -150px;
+  }
+}
+@media all and (max-width: 800px){
+  #heading{
+    right: 12%;
+    font-size: 30px;
+  }
+  #input{
+    top: 10%;
+  }
+  #photo{
+    bottom: 250px;
+  }
+}
+@media all and (max-width: 680px){
+  body, .darkbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer{
+    width: 100%;
+    border-radius: 0;
+    margin-top: 15px;
+  }
+  #heading{
+    top: 3%;
+    right: auto;
+  }
+  #input{
+    position: absolute;
+    top: 12%;
+    left: auto;
+  }
+  #allInfo *{
+    margin: 0;
+  }
+  #allInfo{
+    position: absolute;
+    top: 18%;
+    left: auto;
+    width: 90%;
+  }
+  #mainInfo{
+    display:flex;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+  #tempo{
+    margin-top: 30px;
+  }
+  #secondInfo{
+    height: fit-content;
+  }
+  #secondInfo *{
+    margin: 15px 0;
+  }
+  #photo{
+    width: 250px;
+    height: 250px;
+    bottom: 80px;
+    left: -100px;
+  }
+}
+@media all and (max-width: 500px){
+  #photo{
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+  #city{
+    font-size: 25px;
+  }
+  #secondInfo, #pogoda{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  #heading{
+    top: 4%;
+  }
+}
+@media all and (max-width: 450px){
+  #heading{
+    font-size: 20px;
+  }
+  #input{
+    width: 50%;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+  }
+}
